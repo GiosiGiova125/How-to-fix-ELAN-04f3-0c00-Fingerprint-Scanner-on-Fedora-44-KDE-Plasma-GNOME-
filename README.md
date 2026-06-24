@@ -7,6 +7,8 @@ It won't work out of the box on Fedora 44. Here is the complete guide to compile
 
 ⚠️**I'M NOT RESPONSABLE OF ANY DAMAGES TO YOUR SYSTEM**⚠️
 
+Before fixing the fp scanner i higly raccomand to do a backup of your important data or a system image.
+
 **Step 1: Install Build Dependencies**
 
 Open your terminal and install all required packages (including Cairo and OpenSSL which are missing from standard install):
