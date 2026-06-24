@@ -1,0 +1,1 @@
+# How-to-fix-ELAN-04f3-0c00-Fingerprint-Scanner-on-Fedora-44-KDE-Plasma-GNOME-
