@@ -69,9 +69,11 @@ Paste this configuration inside, then save and exit:
 Description=Restart fprintd after suspend
 After=suspend.target
 
+
 [Service]
 Type=oneshot
 ExecStart=/bin/systemctl restart fprintd.service
+
 
 [Install]
 WantedBy=suspend.target```
