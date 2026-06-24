@@ -76,7 +76,7 @@ ExecStart=/bin/systemctl restart fprintd.service
 
 
 [Install]
-WantedBy=suspend.target```
+WantedBy=suspend.target
 
 Enable it with:
 
