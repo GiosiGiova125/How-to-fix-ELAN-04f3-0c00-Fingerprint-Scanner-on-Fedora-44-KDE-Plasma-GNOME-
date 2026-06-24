@@ -1,4 +1,4 @@
-(link to the guide on reddit: https://www.reddit.com/r/Fedora/comments/1uegcji/how_to_fix_elan_04f30c00_fingerprint_scanner_on/)
+(link to the same guide but on reddit: https://www.reddit.com/r/Fedora/comments/1uegcji/how_to_fix_elan_04f30c00_fingerprint_scanner_on/)
  
  Hi everyone!
 
