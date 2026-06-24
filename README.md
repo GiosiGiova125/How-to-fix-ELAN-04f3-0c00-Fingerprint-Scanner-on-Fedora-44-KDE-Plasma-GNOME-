@@ -1,3 +1,5 @@
+(link to the guide on reddit: https://www.reddit.com/r/Fedora/comments/1uegcji/how_to_fix_elan_04f30c00_fingerprint_scanner_on/)
+ 
  Hi everyone!
 
 Today i wanted to show to you how to fix the fingerptint scanner **ELAN 04f3:0c00.**
