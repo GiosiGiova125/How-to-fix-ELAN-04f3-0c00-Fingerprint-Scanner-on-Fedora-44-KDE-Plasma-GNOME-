@@ -6,11 +6,13 @@ It won't work out of the box on Fedora 44. Here is the complete guide to compile
 ⚠️**I'M NOT RESPONSABLE OF ANY DAMAGES TO YOUR SYSTEM**⚠️
 
 **Step 1: Install Build Dependencies**
+
 Open your terminal and install all required packages (including Cairo and OpenSSL which are missing from standard install):
 
 sudo dnf install git gcc glib2-devel libgusb-devel gobject-introspection-devel pixman-devel nss-devel libgudev-devel gtk-doc meson ninja-build cairo-devel openssl-devel
 
 **Step 2: Clone the Community Patched Driver**
+
 We need the elanmoc2 branch from the community repository:
 
 cd ~
@@ -18,6 +20,7 @@ git clone -b elanmoc2 https://gitlab.freedesktop.org/Depau/libfprint.git
 cd libfprint
 
 **Step 3: Compile and Install**
+
 Run these commands to build the custom driver:
 
 meson setup builddir
@@ -26,12 +29,14 @@ ninja
 sudo ninja install
 
 **Step 4: Configure Fedora Library Path**
+
 Tell Fedora to look into /usr/local/lib for the new driver:
 
 echo -e "/usr/local/lib\n/usr/local/lib64" | sudo tee /etc/ld.so.conf.d/local.conf
 sudo ldconfig
 
 **Step 5: Enable Biometrics & Register Fingers**
+
 Restart the daemon and register your main finger:
 
 sudo systemctl restart fprintd.service
