@@ -87,6 +87,7 @@ Enable it with:
 **Tip for KDE Plasma Users**
 
 If you use KDE Plasma like me If the sensor doesn't recognize your finger on the first try, go to System Settings > Users > Configure Fingerprints and register your same physical finger under a different slot (e.g., register your right index finger again but label it as "right middle finger"). This maps multiple angles of your finger and drastically improves accuracy.
+If there are problems with the registration download the app Enroll by the store and try to register the fingerprint again.
 
 Unfortunately, on the lock screen, there is a guide that tells you to put your finger and you must do that before it disappears, **otherwise it won't work** and you'll need to enter your password.
 
