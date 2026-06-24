@@ -16,7 +16,9 @@ sudo dnf install git gcc glib2-devel libgusb-devel gobject-introspection-devel p
 We need the elanmoc2 branch from the community repository:
 
 cd ~
+
 git clone -b elanmoc2 https://gitlab.freedesktop.org/Depau/libfprint.git
+
 cd libfprint
 
 **Step 3: Compile and Install**
@@ -24,8 +26,11 @@ cd libfprint
 Run these commands to build the custom driver:
 
 meson setup builddir
+
 cd builddir
+
 ninja
+
 sudo ninja install
 
 **Step 4: Configure Fedora Library Path**
@@ -33,6 +38,7 @@ sudo ninja install
 Tell Fedora to look into /usr/local/lib for the new driver:
 
 echo -e "/usr/local/lib\n/usr/local/lib64" | sudo tee /etc/ld.so.conf.d/local.conf
+
 sudo ldconfig
 
 **Step 5: Enable Biometrics & Register Fingers**
@@ -40,6 +46,7 @@ sudo ldconfig
 Restart the daemon and register your main finger:
 
 sudo systemctl restart fprintd.service
+
 fprintd-enroll
 
 When you insert the command "fprintd-enroll" you must tap the fingerprint sensor to register your finger. You must do this right now, than if you want to register another finger you can do it by graphics intarface by going into settings>users>setup fingerprint or similar things (i'm italian so my pc is in italian language :) ) or by the terminal with the same command
@@ -47,6 +54,7 @@ When you insert the command "fprintd-enroll" you must tap the fingerprint sensor
 Enable the fingerprint feature system-wide for login and sudo:
 
 sudo authselect enable-feature with-fingerprint
+
 sudo authselect apply-changes
 
 **Step 6: Fix the "Not working after Sleep/Suspend" Bug**
